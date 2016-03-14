@@ -1,0 +1,8 @@
+{
+    "appPath": "app",
+    "buildPath": "build",
+    "host": "http://localhost",
+    "hostname": "0.0.0.0",
+    "connectPort": "",
+    "livereloadPort": ""
+}

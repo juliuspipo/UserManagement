@@ -1,0 +1,24 @@
+{
+  "name": "adminusers",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Cristian Ramirez <cristian.ramirez@adesis.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/rcristian5/AdminUsers",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "oclazyload": "^1.0.9",
+    "underscore": "^1.8.3"
+  }
+}
