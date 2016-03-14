@@ -1,8 +1,12 @@
 {
     "appPath": "app",
     "buildPath": "build",
+    "apps": [
+        "admin-users"
+    ],
     "host": "http://localhost",
-    "hostname": "0.0.0.0",
-    "connectPort": "",
-    "livereloadPort": ""
+    "hostname": "127.0.0.1",
+    "serverPath": "server/server.js",
+    "connectPort": "9001",
+    "livereloadPort": "3101"
 }
