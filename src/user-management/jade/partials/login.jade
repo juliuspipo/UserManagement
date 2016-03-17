@@ -1,18 +1,17 @@
 include ../mixins/button
 
-.loginContainer
-    .loginBox
-        .loginTitle WIBE. Gestión de usuarios
-        .loginSubtitle.marginT40 Acceso al servicio
+div.loginContainer
+    div.loginBox
+        div.loginTitle WIBE. Gestión de usuarios
+        div.loginSubtitle Acceso al servicio
 
         label Usuario
         input.text
 
-        label.marginT10 Contraseña
+        label.password Contraseña
         input.text
 
-        .marginT20
-            +button('accept', 'Entrar')
+        .botton-login
+            +acceptButton('', 'Entrar')
 
-        .marginT30
-            a.login(ui-sref='recovery-password') ¿Olvidaste tu contraseña?
+        a.login(ui-sref='recovery-password') ¿Olvidaste tu contraseña?
