@@ -1,0 +1,212 @@
+.user-management{
+
+
+
+    .search-management{
+        background: white;
+        min-height: 110px;
+        padding: 1px 7px;
+
+
+
+        .section-title{
+            color: $color-gray-text;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 5px 0;
+        }
+
+
+
+        .section-form{
+            margin-top: 7px;
+
+
+
+            .form-field{
+                display: inline-block;
+                margin-right: 20px;
+
+
+
+                .label-field{
+                    display: block;
+                    font-size: 13px;
+                    margin-bottom: 3px;
+                }
+
+
+
+                .select-field{
+                    padding: 8px;
+                    width: 251px;
+                }
+
+
+
+                .text-field{
+                    display: inline-block;
+                    margin-left: 3px;
+                    margin-right: 4px;
+                    position: relative;
+
+
+
+                    input{
+                        border: 1px solid $color-gray-border;
+                        padding: 13px 25px 8px 5px;
+                        width: 496px;
+                    }
+
+
+
+                    .icon{
+                        background-image: url("../../commons/images/search.png");
+                        background-repeat: no-repeat;;
+                        color: $color-gray-text;
+                        height: 24px;
+                        position: absolute;
+                        right: 0;
+                        top: 9px;
+                        width: 24px;
+
+                    }
+                }
+
+
+
+                .search-button{
+                    color: $color-gray-text;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-family: 'Stag Sans Light', 'Stag Sans';
+                    font-size: 12px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+
+
+    .filter-search{
+        margin-top: 17px;
+
+
+
+        .add-user{
+            background: white;
+            border-radius: 5px;
+            border: 1px solid $color-gray-border;
+            color: $color-gray-text;
+            display: inline-block;
+            margin-left: 7px;
+            padding: 10px 5px;;
+            position: relative;
+            text-align: center;
+            vertical-align: top;
+            width: 162px;
+
+
+
+            .text{
+                font-size: 14px;
+            }
+
+
+
+            .icon{
+                font-size: 20px;
+                font-weight: bold;
+                position: absolute;
+                right: 8px;
+                top: 7px;
+            }
+        }
+
+
+
+        .filter-status{
+            background: white;
+            border-radius: 5px;
+            border: 1px solid $color-gray-border;
+            display: inline-block;
+            margin-left: 15px;
+            padding: 9px;
+            width: 763px;
+
+
+
+            .filter-field{
+                display: inline-block;
+                font-size: 13px;
+
+
+
+                label{
+                    margin-left: -6px;
+                }
+
+
+
+                &.all{
+                    margin-left: 39px;
+                }
+
+
+
+                &.active{
+                    margin-left: 93px;
+                }
+
+
+
+                &.inactive{
+                    margin-left: 117px;
+                }
+
+
+
+                &.pending{
+                    margin-left: 116px;
+                }
+            }
+        }
+
+
+
+        .pagination{
+            float: right;
+            margin-top: 11px;
+
+
+
+            .pagination-button{
+                background: white;
+                cursor: pointer;
+                font-weight: bold;
+                margin: 0 3px;
+                padding: 7px 10px;
+            }
+
+
+
+            .before{
+                margin-right: 16px;
+            }
+
+
+
+            .text{
+                font-size: 14px;
+                margin-right: 11px;
+            }
+        }
+    }
+
+
+
+    .card-users{
+        margin-top: 10px;
+    }
+}
