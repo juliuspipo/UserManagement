@@ -1,1 +1,18 @@
-h1 Iniciar sesion
+include ../mixins/button
+
+.loginContainer
+    .loginBox
+        .loginTitle WIBE. Gestión de usuarios
+        .loginSubtitle.marginT40 Acceso al servicio
+
+        label Usuario
+        input.text
+
+        label.marginT10 Contraseña
+        input.text
+
+        .marginT20
+            +button('accept', 'Entrar')
+
+        .marginT30
+            a.login(ui-sref='recovery-password') ¿Olvidaste tu contraseña?
