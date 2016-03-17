@@ -5,16 +5,10 @@ head
     link(rel="stylesheet", href="user-management/styles/main.css", media="screen", title="no title", charset="utf-8")
 body(ng-app="userManagement", ng-controller="mainCtrl")
 
-    include ../includes/header.jade
+    div.main-container
+        include ../includes/header.jade
 
-    //- p {{model.lorem}}
-
-    div( ui-view="" )
-
-    //- a(ui-sref="login") logon
-        br
-        br
-        a(ui-sref="user-management") usuarios
+        div( ui-view="" )
 
 
 
