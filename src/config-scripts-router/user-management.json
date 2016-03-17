@@ -1,0 +1,6 @@
+{
+    "main": [
+        "scripts/controllers/loginCtrl.js",
+        "scripts/controllers/mainCtrl.js"
+    ]
+}

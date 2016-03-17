@@ -1,12 +1,11 @@
 {
-    "appPath": "app",
+    "appPath": "src",
     "buildPath": "build",
     "apps": [
-        "admin-users"
+        "user-management"
     ],
     "host": "http://localhost",
     "hostname": "127.0.0.1",
-    "serverPath": "server/server.js",
     "connectPort": "9001",
     "livereloadPort": "3101"
 }

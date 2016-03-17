@@ -6,13 +6,6 @@
         // Load grunt tasks automatically
         require('load-grunt-tasks')(grunt);
 
-        function toCamelCase ( input ) {
-            return input.replace( /-([a-z])/g, function ( g ) {
-                return g[1].toUpperCase();
-            } );
-        }
-
-
         function arrayToCamelCase ( array ) {
             var newArray = [];
             for (var i = 0; i < array.length; i++) {
@@ -22,24 +15,110 @@
         }
 
 
+        function toCamelCase ( input ) {
+            return input.replace( /-([a-z])/g, function ( g ) {
+                return g[1].toUpperCase();
+            } );
+        }
+
+
+        function concatenateCustomFiles () {
+            var concatConfig = {
+                options: {
+                    separator: ';'
+                },
+                commons: {
+                    src: appConfig.buildPath + '/commons/scripts/{,**/}*.js',
+                    dest: appConfig.buildPath + '/commons/scripts/concat-scripts/commons-all.js'
+                }
+            };
+
+            var concatenateCustomFiles = false;
+            var configScripts = require( './' + appConfig.appPath + '/config-scripts-router/main-config-scripts.js' );
+            appConfig['scripts-app'] = configScripts;
+
+            for( var app in appConfig['scripts-app'] ){
+                for( var task in appConfig['scripts-app'][app] ){
+                    for (var i = 0; i < appConfig['scripts-app'][app][task].length; i++) {
+                        appConfig['scripts-app'][app][task][i] = appConfig.buildPath + '/' + app + '/' + appConfig['scripts-app'][app][task][i];
+                    }
+                    concatConfig[ app + "-" + task ] = {
+                        src: appConfig['scripts-app'][app][task],
+                        dest: appConfig.buildPath + '/' + app + "/scripts/concat-scripts/" + task + "-all.js"
+                    };
+                }
+                concatenateCustomFiles = true;
+            }
+
+            if ( !concatenateCustomFiles ) {
+                for ( var j = 0; j < appConfig.apps.length; j++) {
+                    concatConfig[appConfig.camelCaseApps[j]] = {
+                        src: [appConfig.buildPath + '/' + appConfig.apps[j] + '/scripts/app.js', appConfig.buildPath + '/' + appConfig.apps[j] + '/scripts/{,**/}*.js'],
+                        dest: appConfig.buildPath + '/' + appConfig.apps[j] + '/scripts/concat-scripts/' + appConfig.apps[j] + '-all.js'
+                    };
+                }
+            }
+
+            return concatConfig;
+        }
+
+        function uglify () {
+
+            var uglifyConfig = {
+                options: {
+                    mangle: true
+                },
+            };
+
+            for( var i = 0; i < appConfig.apps.length; i++ ){
+                console.log( appConfig.apps[i] );
+                uglifyConfig[ appConfig.apps[i] + "-uglify" ] = {
+                    expand: true,
+                    cwd: appConfig.buildPath + "/" + appConfig.apps[i] + "/scripts/concat-scripts",
+                    src: [
+                        '*.js',
+                        '!**/*.min.js'
+                    ],
+                    dest: appConfig.buildPath + "/" + appConfig.apps[i] + "/scripts/concat-scripts",
+                    ext: ".min.js",
+                    extDot: "last"
+                };
+            }
+            return uglifyConfig;
+        }
+
         function server ( ) {
             var serverConfig = {
                 bsFiles: {
                     src : [
-                        'build/**/*.css',
-                        'build/**/*.html'
+                        appConfig.buildPath + '/**/*.css',
+                        appConfig.buildPath + '/**/*.js',
+                        appConfig.buildPath + '/**/*.html'
                     ]
                 },
                 options: {
                     watchTask: true,
                     server: {
-                        baseDir: "./build",
-                        index: "admin-users/views/layout/layout.html"
+                        baseDir: appConfig.buildPath,
+                        index: "user-management/views/layout/layout.html"
                     }
                 }
             };
 
             return serverConfig;
+        }
+
+        function watchSassCustom(){
+            var watch = tasksConfig.watchTasksInitConfig( appConfig );
+
+            for (var i = 0; i < appConfig.apps.length; i++) {
+                watch[appConfig.camelCaseApps[i] + 'Sass'] = {
+                    files: [ appConfig.appPath + '/' + appConfig.apps[i] + '/sass/**/*.scss' ],
+                    tasks: [ 'sass:' + appConfig.camelCaseApps[i] ]
+                };
+            }
+
+            return watch;
         }
 
 
@@ -83,10 +162,10 @@
             cssmin: tasksConfig.cssminInitTaskConfig( appConfig ),
 
             // Concat
-            concat: tasksConfig.concatInitTaskConfig( appConfig ),
+            concat: concatenateCustomFiles( ),
 
             // Ugligy js
-            uglify: tasksConfig.uglifyInitTaskConfig( appConfig ),
+            uglify: uglify( ),
 
             // Inject all dependencies
             // injector: tasksConfig.injectorInitTasksConfig( appConfig ),
@@ -98,7 +177,7 @@
             connect: tasksConfig.connectInitTasksConfig( appConfig ),
 
             // Watch for changes on files
-            watch: tasksConfig.watchTasksInitConfig( appConfig ),
+            watch: watchSassCustom(),
 
             // Bind the express server
             browserSync: server( )
