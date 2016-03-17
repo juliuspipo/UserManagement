@@ -13,16 +13,16 @@
         color: white;
 
         &:hover {
-            background: $color-greenDark;
+            background: $color-green-dark;
         }
     }
 
     &.cancel {
-        background: $color-grayLight;
+        background: $color-gray-light;
         color: white;
 
         &:hover {
-            background: $color-grayDark;
+            background: $color-gray-dark;
         }
     }
 }
