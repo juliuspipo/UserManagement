@@ -1,0 +1,31 @@
+.icon {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+
+    &.icon-search {
+        background-image: url("../../commons/images/search.png");
+        height: 24px;
+        width: 24px;
+    }
+
+
+
+    &.icon-user {
+        background-image: url("../../commons/images/icon-user.png");
+        background-size: 20px;
+        height: 20px;
+        width: 20px;
+    }
+
+
+
+    &.icon-calendar {
+        background-image: url("../../commons/images/icon-calendar.png");
+        background-size: 20px;
+        height: 20px;
+        width: 20px;
+    }
+}
