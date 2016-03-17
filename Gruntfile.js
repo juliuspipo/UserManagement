@@ -71,7 +71,6 @@
             };
 
             for( var i = 0; i < appConfig.apps.length; i++ ){
-                console.log( appConfig.apps[i] );
                 uglifyConfig[ appConfig.apps[i] + "-uglify" ] = {
                     expand: true,
                     cwd: appConfig.buildPath + "/" + appConfig.apps[i] + "/scripts/concat-scripts",
