@@ -1,97 +1,98 @@
-a.login {
-    color: #00f;
-    font-size: 13px;
-    text-decoration: none;
-}
-
-
-
-.arrow {
-    background-image: url('../../commons/images/arrowL.png');
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 29px 35px;
-    cursor: pointer;
-    margin-left: -5px;
-    padding-right: 35px;
-}
-
-
-
-.instructions {
-    color: $color-gray-dark;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: left;
-}
-
-
-
 .loginContainer {
     text-align: center;
+
+
+
+    .loginBox {
+        background: white;
+        border: 1px solid $color-gray-light;
+        height: 397px;
+        margin: 0 auto;
+        padding: 20px 30px;
+        text-align: left;
+        width: 320px;
+
+
+
+        a.login {
+            color: $color-blue;
+            display: block;
+            font-size: 13px;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+
+
+
+        .arrow {
+            background-image: url('../../commons/images/arrowL.png');
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 29px 35px;
+            cursor: pointer;
+            margin-left: -5px;
+            padding-right: 35px;
+        }
+
+
+
+        .instructions {
+            color: $color-gray-dark;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+
+
+        .loginTitle {
+            color: $color-green;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+
+
+        .loginSubtitle {
+            color: $color-gray-dark;
+            font-size: 18px;
+            margin: 40px 0 10px 0;
+        }
+
+
+
+        .botton-email {
+            margin-top: 25px
+        }
+
+
+
+        .botton-login {
+            margin-top: 20px
+        }
+
+
+
+        .botton-password {
+            margin-top: 10px
+        }
+
+
+
+        label.password {
+            margin-top: 10px;
+        }
+
+
+
+        label.password-top {
+            margin-top: 20px;
+        }
+    }
+
 }
 
-
-
-.loginBox {
-    background: white;
-    border: 1px solid $color-gray-light;
-    height: 397px;
-    margin: 0 auto;
-    padding: 20px 30px;
-    text-align: left;
-    width: 320px;
-}
-
-
-
-.loginTitle {
-    color: $color-green;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-}
-
-
-
-.loginSubtitle {
-    color: $color-gray-dark;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-
-
-.marginT5 {
-  margin-top: 5px;
-}
-
-.marginT10 {
-  margin-top: 10px;
-}
-
-.marginT15 {
-  margin-top: 15px;
-}
-
-.marginT20 {
-  margin-top: 20px;
-}
-
-.marginT25 {
-  margin-top: 25px;
-}
-
-.marginT35 {
-  margin-top: 35px;
-}
-
-.marginT30 {
-  margin-top: 30px;
-}
-
-.marginT40 {
-  margin-top: 40px;
-}
