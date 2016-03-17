@@ -1,9 +1,9 @@
-.loginContainer {
+.login-container {
     text-align: center;
 
 
 
-    .loginBox {
+    .login-box {
         background: white;
         border: 1px solid $color-gray-light;
         height: 397px;
@@ -24,14 +24,13 @@
 
 
 
-        .arrow {
-            background-image: url('../../commons/images/arrowL.png');
-            background-position: left;
-            background-repeat: no-repeat;
+        .icon-arrow {
+            background-position: top left;
             background-size: 29px 35px;
             cursor: pointer;
             margin-left: -5px;
-            padding-right: 35px;
+            margin-top: 5px;
+            padding-right: 11px;
         }
 
 
@@ -57,7 +56,17 @@
 
 
 
-        .loginSubtitle {
+        .login-title-recovery {
+            color: $color-green;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            margin-top: -13px;
+        }
+
+
+
+        .login-subtitle {
             color: $color-gray-dark;
             font-size: 18px;
             margin: 40px 0 10px 0;
