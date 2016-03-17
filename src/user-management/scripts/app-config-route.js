@@ -9,14 +9,7 @@
 
             .state('check-email', {
                 url: "/check-email",
-                templateUrl: "/user-management/views/partials/check-email.html",
-                resolve: {
-                    controllers: function ( $ocLazyLoad ){
-                        return $ocLazyLoad.load([
-                            "./user-management/scripts/controllers/checkEmailCtrl.js"
-                        ]);
-                    }
-                }
+                templateUrl: "/user-management/views/partials/check-email.html"
             })
 
 
@@ -37,28 +30,14 @@
 
             .state('new-password', {
                 url: "/new-password",
-                templateUrl: "/user-management/views/partials/new-password.html",
-                resolve: {
-                    controllers: function ( $ocLazyLoad ){
-                        return $ocLazyLoad.load([
-                            "./user-management/scripts/controllers/newPasswordCtrl.js"
-                        ]);
-                    }
-                }
+                templateUrl: "/user-management/views/partials/new-password.html"
             })
 
 
 
             .state('recovery-password', {
                 url: "/recovery-password",
-                templateUrl: "/user-management/views/partials/recovery-password.html",
-                resolve: {
-                    controllers: function ( $ocLazyLoad ){
-                        return $ocLazyLoad.load([
-                            "./user-management/scripts/controllers/recoveryPasswordCtrl.js"
-                        ]);
-                    }
-                }
+                templateUrl: "/user-management/views/partials/recovery-password.html"
             })
 
 
