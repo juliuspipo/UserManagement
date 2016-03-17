@@ -8,6 +8,8 @@
     outline: none;
     width: 292px;
 
+
+
     &.accept {
         background: $color-green;
         color: white;
@@ -16,6 +18,8 @@
             background: $color-green-dark;
         }
     }
+
+
 
     &.cancel {
         background: $color-gray-light;
