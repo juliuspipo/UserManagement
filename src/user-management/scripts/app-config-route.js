@@ -40,6 +40,8 @@
                 templateUrl: "/user-management/views/partials/add-user.html"
             });
 
+
+
     }
 
     angular.module( 'userManagement' )
