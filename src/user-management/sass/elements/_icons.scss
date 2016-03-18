@@ -7,6 +7,15 @@
 
     &.icon-arrow {
         background-image: url("../../commons/images/arrowL.png");
+        height: 25px;
+        width: 24px;
+    }
+
+
+
+    &.icon-arrow-bottom {
+        background-image: url("../../commons/images/arrowB.png");
+        background-size: 24px;
         height: 24px;
         width: 24px;
     }
