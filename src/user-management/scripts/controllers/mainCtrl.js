@@ -1,11 +1,17 @@
 (function(){
     'use strict';
 
+
+
     function mainCtrl ( $scope, $rootScope, $state ){
+
+
 
         function setup (){
             setupVars();
         }
+
+
 
         function setupVars () {
             $scope.model = {};
@@ -17,6 +23,9 @@
 
         setup();
     }
+
+
+
 
     angular.module( "userManagement.controllers", [])
     .controller( "mainCtrl", mainCtrl );
