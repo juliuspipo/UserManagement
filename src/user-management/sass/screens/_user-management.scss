@@ -12,41 +12,92 @@
         .section-title{
             color: $color-gray-text;
             font-size: 20px;
-            font-weight: 400;
+            font-weight: 700;
             margin: 5px 0;
+        }
+
+
+        .section-add-user{
+            overflow: hidden;
+
+
+
+            .add-user{
+                background: $color-orange-button;
+                border-radius: 5px;
+                color: white;
+                display: inline-block;
+                float: right;
+                margin-right: 35px;
+                margin-top: 7px;
+                padding: 10px 5px;;
+                position: relative;
+                text-align: center;
+                width: 162px;
+
+
+
+                .text{
+                    font-size: 14px;
+                }
+
+
+
+                .icon-plus{
+                    color: $color-gray-text;
+                    font-size: 20px;
+                    font-weight: bold;
+                    position: absolute;
+                    right: 8px;
+                    top: 7px;
+                }
+            }
         }
 
 
 
         .section-form{
-            margin-top: 7px;
+            margin-bottom: 29px;
+            margin-left: 49px;
+            margin-top: 15px;
+
+
+            .section-subtitle{
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
 
 
 
             .form-field{
                 display: inline-block;
-                margin-right: 20px;
+                margin-right: 16px;
 
 
 
                 .label-field{
                     display: block;
                     font-size: 13px;
-                    margin-bottom: 3px;
+                    margin-bottom: 10px;
                 }
 
 
 
                 .select-field{
                     padding: 8px;
-                    width: 251px;
+                    width: 192px;
+
+
+
+                    &.rol{
+                        width: 250px;
+                    }
                 }
 
 
 
                 .text-field{
                     display: inline-block;
-                    margin-left: 3px;
                     margin-right: 4px;
                     position: relative;
 
@@ -54,8 +105,9 @@
 
                     input{
                         border: 1px solid $color-gray-border;
-                        padding: 13px 25px 8px 5px;
-                        width: 496px;
+                        box-sizing: border-box;
+                        padding: 9px 40px 8px 5px;
+                        width: 329px;
                     }
 
 
@@ -63,20 +115,44 @@
                     .icon-search{
                         color: $color-gray-text;
                         position: absolute;
-                        right: 0;
-                        top: 9px;
+                        right: 13px;
+                        top: 5px;
                     }
                 }
 
 
 
                 .search-button{
-                    color: $color-gray-text;
+                    background: $color-gray-button;
+                    border-radius: 5px;
+                    color: white;
                     cursor: pointer;
                     display: inline-block;
-                    font-family: 'Stag Sans Light', 'Stag Sans';
-                    font-size: 12px;
-                    font-weight: 300;
+                    font-size: 14px;
+                    margin-left: 5px;
+                    padding: 11px 24px;
+                }
+
+
+
+                .search-advanced-button{
+                    display: inline-block;
+                    font-size: 14px;
+                    margin-left: 47px;
+
+
+
+                    .icon-arrow-down{
+                        margin-left: 7px;
+                        transition: all 0.3s;
+                        vertical-align: middle;
+
+
+
+                        &.down{
+                            transform: rotateZ(180deg);
+                        }
+                    }
                 }
             }
         }
@@ -85,39 +161,7 @@
 
 
     .filter-search{
-        margin-top: 17px;
-
-
-
-        .add-user{
-            background: white;
-            border-radius: 5px;
-            border: 1px solid $color-gray-border;
-            color: $color-gray-text;
-            display: inline-block;
-            margin-left: 7px;
-            padding: 10px 5px;;
-            position: relative;
-            text-align: center;
-            vertical-align: top;
-            width: 162px;
-
-
-
-            .text{
-                font-size: 14px;
-            }
-
-
-
-            .icon-plus{
-                font-size: 20px;
-                font-weight: bold;
-                position: absolute;
-                right: 8px;
-                top: 7px;
-            }
-        }
+        margin-top: 19px;
 
 
 
@@ -126,9 +170,9 @@
             border-radius: 5px;
             border: 1px solid $color-gray-border;
             display: inline-block;
-            margin-left: 15px;
+            margin-left: 60px;
             padding: 9px;
-            width: 763px;
+            width: 679px;
 
 
 
@@ -145,7 +189,7 @@
 
 
                 &.all{
-                    margin-left: 39px;
+                    margin-left: 2px;
                 }
 
 
@@ -157,13 +201,13 @@
 
 
                 &.inactive{
-                    margin-left: 117px;
+                    margin-left: 116px;
                 }
 
 
 
                 &.pending{
-                    margin-left: 116px;
+                    margin-left: 88px;
                 }
             }
         }
@@ -172,6 +216,7 @@
 
         .pagination{
             float: right;
+            margin-right: 23px;
             margin-top: 11px;
 
 
@@ -202,6 +247,6 @@
 
 
     .card-users{
-        margin-top: 10px;
+        margin-top: 14px;
     }
 }

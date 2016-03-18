@@ -1,7 +1,12 @@
 div.user-management
     div.search-management
         h2.section-title Usuarios
+        div.section-add-user
+            div.add-user
+                span.text ALTA DE USUARIO
+                span.icon.icon-plus +
         div.section-form
+            div.section-subtitle Búsqueda
             div.form-field
                 label.label-field Aplicación
                 select.select-field(name="")
@@ -10,7 +15,7 @@ div.user-management
                     option Gestion de usuarios
             div.form-field
                 label.label-field Rol
-                select.select-field(name="")
+                select.select-field.rol(name="")
                     option Todos
                     option Usuario técnico
                     option Usuario comercial
@@ -19,12 +24,12 @@ div.user-management
                 div.text-field
                     input(type="text", placeholder="Introduce nombre o ID usuario")
                     span.icon.icon-search
-                div.search-button AVANZADA
+                div.search-button BUSCAR
+                div.search-advanced-button
+                    span.text Avanzada
+                    span.icon.icon-arrow-down
 
     div.filter-search
-        div.add-user
-            span.text ALTA DE USUARIO
-            span.icon.icon-plus +
         div.filter-status
             div.filter-field.all
                 input#todos(type="checkbox")
@@ -48,11 +53,10 @@ div.user-management
             div.image
             div.data
                 div.name Francisco Xabier Mina Larrea
-                div.email BA45345345345
-                div.applications-permissions
+                div.email rran.mina@bbva.contractor.com
+                div.permissions
                     span.icon.icon-user
-                    span.applications CUPONES.
-                    span.permissions Usuario técnico (+ 3 roles)
+                    span.user-permission Usuario comercial
                 div.date-status
                     div.date
                         span.icon.icon-calendar
