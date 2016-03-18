@@ -38,6 +38,13 @@
             .state('add-user', {
                 url: "/add-user",
                 templateUrl: "/user-management/views/partials/add-user.html"
+            })
+
+
+
+            .state('user-detail', {
+                url: "/user-detail",
+                templateUrl: "/user-management/views/partials/user-detail.html"
             });
 
 
