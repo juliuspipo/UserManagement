@@ -1,0 +1,19 @@
+mixin cancelButton( _ngClick , _text)
+    button.button.cancel(
+        id=attributes.id,
+        ng-class!=attributes.ngClass,
+        ng-click=_ngClick,
+        ng-disabled!=attributes.ngDisabled
+    )
+        span=_text
+
+
+
+mixin acceptButton( _ngClick , _text )
+    button.button.accept(
+        id=attributes.id,
+        ng-class!=attributes.ngClass,
+        ng-click=_ngClick,
+        ng-disabled!=attributes.ngDisabled
+    )
+        span=_text

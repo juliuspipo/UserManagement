@@ -9,6 +9,11 @@
 
         $stateProvider
 
+            .state('check-email', {
+                url: "/check-email",
+                templateUrl: "/user-management/views/partials/check-email.html"
+            })
+
 
 
             .state('login', {
@@ -21,6 +26,20 @@
                         ]);
                     }
                 }
+            })
+
+
+
+            .state('new-password', {
+                url: "/new-password",
+                templateUrl: "/user-management/views/partials/new-password.html"
+            })
+
+
+
+            .state('recovery-password', {
+                url: "/recovery-password",
+                templateUrl: "/user-management/views/partials/recovery-password.html"
             })
 
 

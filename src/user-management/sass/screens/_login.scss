@@ -1,0 +1,106 @@
+.login-container {
+    text-align: center;
+
+
+
+    .login-box {
+        background: white;
+        border: 1px solid $color-gray-light;
+        height: 397px;
+        margin: 0 auto;
+        padding: 20px 30px;
+        text-align: left;
+        width: 320px;
+
+
+
+        a.login {
+            color: $color-blue;
+            display: block;
+            font-size: 13px;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+
+
+
+        .icon-arrow {
+            background-position: top left;
+            background-size: 30px 30px;
+            cursor: pointer;
+            margin-left: -5px;
+            padding-right: 11px;
+        }
+
+
+
+        .instructions {
+            color: $color-gray-dark;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+
+
+        .loginTitle {
+            color: $color-green;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+
+
+        .login-title-recovery {
+            color: $color-green;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            margin-top: -13px;
+        }
+
+
+
+        .login-subtitle {
+            color: $color-gray-dark;
+            font-size: 18px;
+            margin: 40px 0 10px 0;
+        }
+
+
+
+        .botton-email {
+            margin-top: 25px
+        }
+
+
+
+        .botton-login {
+            margin-top: 20px
+        }
+
+
+
+        .botton-password {
+            margin-top: 10px
+        }
+
+
+
+        label.password {
+            margin-top: 10px;
+        }
+
+
+
+        label.password-top {
+            margin-top: 20px;
+        }
+    }
+
+}
+

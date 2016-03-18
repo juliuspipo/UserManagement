@@ -1,0 +1,32 @@
+.button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    height: 41px;
+    outline: none;
+    width: 292px;
+
+
+
+    &.accept {
+        background: $color-green;
+        color: white;
+
+        &:hover {
+            background: $color-green-dark;
+        }
+    }
+
+
+
+    &.cancel {
+        background: $color-gray-light;
+        color: white;
+
+        &:hover {
+            background: $color-gray-dark;
+        }
+    }
+}
