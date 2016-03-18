@@ -62,8 +62,10 @@
             margin-top: 15px;
 
 
+
             .section-subtitle{
                 font-size: 15px;
+                font-weight: 700;
                 margin-bottom: 20px;
             }
 
@@ -153,6 +155,53 @@
                             transform: rotateZ(180deg);
                         }
                     }
+                }
+            }
+
+
+
+            .form-dates{
+                margin-bottom: -10px;
+                margin-top: 35px;
+                padding: 0 25px;
+
+
+
+                .date-start{
+                    display: inline-block;;
+                    margin-right: 60px;
+                }
+
+
+
+                .date-end{
+                    display: inline-block;;
+                }
+
+
+
+                .text{
+                    color: $color-gray-text;
+                    display: inline-block;
+                    font-size: 13px;
+                    margin-right: 9px;
+                }
+
+
+
+                .date-field{
+                    border-radius: 5px;
+                    border: 1px solid $color-gray-border;
+                    height: 34px;
+                    text-align: center;
+                    width: 100px;
+                    width: 71px;
+                }
+
+
+
+                .icon-calendar2{
+                    vertical-align: middle;
                 }
             }
         }
