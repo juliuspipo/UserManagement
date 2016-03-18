@@ -31,6 +31,13 @@
                         ]);
                     }
                 }
+            })
+
+
+
+            .state('add-user', {
+                url: "/add-user",
+                templateUrl: "/user-management/views/partials/add-user.html"
             });
 
     }
