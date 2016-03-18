@@ -28,11 +28,11 @@ div.menu
             li
                  a(href='') OPCIÓN 7
 
-    .logout
-        span.icon.icon-arrow-bottom(ng-click='showExit()')
+    div.logout
+        span.icon.icon-arrow-bottom(ng-click='visibilityExit = !visibilityExit')
 
 
-    .user-info Pedro Manuel Infante Martínez de la Cruz
+    div.user-info Pedro Manuel Infante Martínez de la Cruz
 
     div.exit(ng-show='visibilityExit')
         ul
