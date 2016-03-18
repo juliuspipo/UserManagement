@@ -1,11 +1,15 @@
 (function(){
     'use strict';
 
+
+
     function routerProviderConfig ($stateProvider, $urlRouterProvider) {
 
         $urlRouterProvider.otherwise("/login");
 
         $stateProvider
+
+
 
             .state('login', {
                 url: "/login",
@@ -65,6 +69,8 @@
 
 
     }
+
+
 
     angular.module( 'userManagement' )
         .config( routerProviderConfig );
