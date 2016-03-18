@@ -1,6 +1,8 @@
 (function(){
     'use strict';
 
+
+
     function routerProviderConfig ($stateProvider, $urlRouterProvider) {
 
         $urlRouterProvider.otherwise("/login");
@@ -58,12 +60,36 @@
 
             .state('add-user', {
                 url: "/add-user",
-                templateUrl: "/user-management/views/partials/add-user.html"
+                templateUrl: "/user-management/views/partials/add-user.html",
+                resolve: {
+                    controllers: function ( $ocLazyLoad ){
+                        return $ocLazyLoad.load([
+                            "./user-management/scripts/directives/application/application.js",
+                            "./user-management/scripts/directives/permission/permission.js"
+                        ]);
+                    }
+                }
+            })
+
+
+
+            .state('user-detail', {
+                url: "/user-detail",
+                templateUrl: "/user-management/views/partials/user-detail.html",
+                resolve: {
+                    controllers: function ( $ocLazyLoad ){
+                        return $ocLazyLoad.load([
+                            "./user-management/scripts/directives/permission/permission.js"
+                        ]);
+                    }
+                }
             });
 
 
 
     }
+
+
 
     angular.module( 'userManagement' )
         .config( routerProviderConfig );

@@ -45,4 +45,21 @@
         height: 20px;
         width: 20px;
     }
+
+
+
+    &.icon-edit {
+        background-image: url("../../commons/images/icon-edit.png");
+        height: 25px;
+        width: 25px;
+    }
+
+
+
+    &.icon-desactive {
+        background-image: url("../../commons/images/icon-desactive.png");
+        background-size: 32px;
+        height: 32px;
+        width: 32px;
+    }
 }

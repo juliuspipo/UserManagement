@@ -1,11 +1,11 @@
 div.add-user
     div.container-data-user
-        h2.subtitle Añadir usuario
+        h2.subtitle Alta de usuario
         div.content-user-form
             form.content-image-profile(action="index.html", method="post")
                 img.image(src="", alt="")
                 //- input(type="file", name="name", value="")
-                div.upload-image SELECCIONAR IMAGEN
+                div.upload-image SELECCIONAR FOTO
             div.content-form-field
                 div.row-field
                     div.form-field
@@ -29,14 +29,8 @@ div.add-user
                     div.applications
                         div.text Aplicaciones disponibles
                         div.container-apps
-                            div.app(ng-repeat="app in [1,2,3,4]")
-                                span.icon-left
-                                span.text CUPONES
-                                span.icon-plus +
+                            div(application="" ng-repeat="app in [1,2,3,4]")
                     div.permissions
                         div.text Roles añadidos
                         div.container-permissions
-                            div.permission(ng-repeat="permission in [1,2]")
-                                span.icon.icon-user
-                                span.text CUPONES
-                                span.icon-plus +
+                            div(permission="", ng-repeat="permission in [1,2]")

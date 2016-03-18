@@ -1,0 +1,166 @@
+.user-detail{
+    background: white;
+
+
+
+    .container-data-user{
+        padding: 10px 38px 38px 38px;
+
+
+
+        .subtitle{
+            border-bottom: 1px solid $color-gray-border-title;
+            color: $color-gray-text;
+            font-size: 20px;
+            margin: 0;
+            padding: 13px 0 20px 34px;
+        }
+
+
+
+        .actions{
+            float: right;
+            margin-right: 5px;
+            margin-top: 6px;
+
+
+
+            .action{
+                color: $color-gray-text;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 14px;
+                margin-left: 30px;
+                vertical-align: middle;
+
+
+
+                .text{
+                    margin-left: 7px;
+                    vertical-align: middle;
+                }
+
+
+
+                .icon{
+                    vertical-align: middle;
+                }
+            }
+        }
+
+
+
+        .content-user{
+            margin-top: 19px;
+
+
+
+            .content-image-profile{
+                display: inline-block;
+                margin-right: 28px;
+
+
+
+                .image{
+                    height: 150px;
+                    width: 150px;
+                }
+            }
+
+
+
+            .content-data{
+                display: inline-block;
+                vertical-align: top;
+                width: 930px;
+
+
+
+                .date-creation-edit{
+                    margin-top: 38px;
+                    margin-bottom: 19px;
+                }
+
+
+
+                .form-field{
+                    color: $color-gray-text;
+                    display: inline-block;
+                    width: 400px;
+
+
+
+                    &:nth-child( odd ){
+                        margin-right: 72px;
+                    }
+
+
+                    .label-field{
+                        color: $color-gray-text;
+                        font-size: 14px;
+                    }
+
+
+
+                    .text-field{
+                        box-sizing: border-box;
+                        padding-bottom: 1px;
+                        padding-top: 4px;
+                    }
+
+
+
+                    .creation{
+                        font-size: 12px;
+                    }
+
+
+
+                    &:nth-child(3n+0){
+                        margin-right: 0;
+                    }
+                }
+            }
+
+
+
+            .applications-permissions{
+                color: $color-gray-text;
+                position: relative;
+
+
+
+                .section-title{
+                    border-top: 1px solid $color-gray-border;
+                    font-size: 14px;
+                    margin: 15px 0 11px 0;
+                    padding-top: 15px;
+                }
+
+
+
+                .permissions{
+
+
+
+                    .container-permissions{
+
+
+
+                        .permission{
+                            display: inline-block;
+                            margin-right: 9px;
+                            width: 258px;
+
+
+
+                            .icon-delete{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

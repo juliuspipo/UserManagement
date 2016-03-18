@@ -1,0 +1,25 @@
+.permission{
+    border-radius: 5px;
+    border: 1px solid $color-gray-border;
+    font-size: 14px;
+    height: 17px;
+    line-height: 20px;
+    margin-bottom: 6px;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    width: 300px;
+
+
+
+    .icon-user{
+        float: left;
+    }
+
+
+
+    .icon-delete{
+        float: right;
+        font-size: 17px;
+        font-weight: bold;
+    }
+}

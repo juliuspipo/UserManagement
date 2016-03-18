@@ -8,9 +8,12 @@
 @import 'elements/card-user';
 @import 'elements/button';
 @import 'elements/menu';
+@import 'elements/application';
+@import 'elements/permission';
 
 @import 'mixins/box-shadow';
 
 @import 'screens/login';
 @import 'screens/user-management';
 @import 'screens/add-user';
+@import 'screens/user-detail';

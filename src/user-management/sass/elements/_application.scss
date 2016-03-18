@@ -1,0 +1,26 @@
+.application{
+    border-radius: 5px;
+    border: 1px solid $color-gray-border;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 9px;
+    padding: 15px 10px 15px 18px;
+    text-align: center;
+    width: 290px;
+
+
+
+    .icon-left{
+        border: 1px solid $color-gray-border;
+        float: left;
+        height: 20px;
+        width: 20px;
+    }
+
+
+
+    .icon-plus{
+        float: right;
+        font-size: 25px;
+    }
+}

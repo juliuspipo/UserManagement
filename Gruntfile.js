@@ -107,17 +107,38 @@
             return serverConfig;
         }
 
-        function watchSassCustom(){
-            var watch = tasksConfig.watchTasksInitConfig( appConfig );
+
+        function jade () {
+            var jadeConfig = tasksConfig.jadeInitTasksConfig( appConfig );
+
 
             for (var i = 0; i < appConfig.apps.length; i++) {
-                watch[appConfig.camelCaseApps[i] + 'Sass'] = {
+                jadeConfig[appConfig.camelCaseApps[i] + 'Directive'] = {
+                    files: [{
+                        expand: true,
+                        cwd: appConfig.appPath + '/' + appConfig.apps[i] + '/scripts/directives',
+                        src: ['{,**/}*.jade'],
+                        dest: appConfig.buildPath + '/' + appConfig.apps[i] + '/scripts/directives',
+                        ext: '.html',
+                        extDot: 'last'
+                    }]
+                };
+            }
+
+            return jadeConfig;
+        }
+
+        function watchSassCustom(){
+            var watchConfig = tasksConfig.watchTasksInitConfig( appConfig );
+
+            for (var i = 0; i < appConfig.apps.length; i++) {
+                watchConfig[appConfig.camelCaseApps[i] + 'Sass'] = {
                     files: [ appConfig.appPath + '/' + appConfig.apps[i] + '/sass/**/*.scss' ],
                     tasks: [ 'sass:' + appConfig.camelCaseApps[i] ]
                 };
             }
 
-            return watch;
+            return watchConfig;
         }
 
 
@@ -149,7 +170,7 @@
             copy: tasksConfig.copyInitTasksConfig( appConfig ),
 
             // Compile jade files
-            jade: tasksConfig.jadeInitTasksConfig( appConfig ),
+            jade: jade(),
 
             // Caches the jade templates into scripts
             html2js: tasksConfig.html2jsInitTasksConfig( appConfig ),

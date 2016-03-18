@@ -4,12 +4,11 @@
 
 
     .container-data-user{
-        padding: 5px 30px;
+        padding: 5px 30px 30px 38px;
 
 
 
         .subtitle{
-            border-bottom: 1px solid $color-gray-border-title;
             color: $color-gray-text;
             font-size: 20px;
             margin: 0;
@@ -19,19 +18,20 @@
 
 
         .content-user-form{
-            margin-top: 10px;
+            margin-top: 19px;
 
 
 
             .content-image-profile{
                 display: inline-block;
-                margin-right: 50px;
+                margin-right: 47px;
+                margin-top: 24px;
 
 
 
                 .image{
-                    height: 150px;
-                    width: 150px;
+                    height: 151px;
+                    width: 151px;
                 }
 
 
@@ -39,11 +39,12 @@
                 .upload-image{
                     background: $color-gray-border-title;
                     border-radius: 5px;
+                    box-sizing: border-box;
                     color: $color-gray-border;
                     cursor: pointer;
                     font-size: 14px;
                     margin-top: 10px;
-                    padding: 5px 3px;
+                    padding: 3px 5px;
                     text-align: center;
                     width: 150px;
                 }
@@ -60,8 +61,8 @@
 
                 .row-tel-email{
                     border-bottom: 1px solid $color-gray-border;
-                    margin-top: 30px;
-                    padding-bottom: 30px;
+                    margin-top: 27px;
+                    padding-bottom: 23px;
                 }
 
 
@@ -75,6 +76,7 @@
                     .label-field{
                         color: $color-gray-text;
                         font-size: 14px;
+                        margin-bottom: 7px;
                     }
 
 
@@ -94,15 +96,18 @@
             }
 
 
-            
+
             .applications-permissions{
                 color: $color-gray-text;
                 position: relative;
+                padding-left: 15px;
 
 
 
                 .section-title{
-                    margin: 15px 0;
+                    margin: 23px 0 15px 0 ;
+                    font-size: 18px;
+                    font-weight: 700;
                 }
 
 
@@ -111,40 +116,13 @@
                     display: inline-block;
                     font-size: 14px;
                     vertical-align: top;
-                    width: 400px;
+                    width: 370px;
 
 
 
                     .container-apps{
                         margin-top: 10px;
                         padding-right: 15px;
-
-
-
-                        .app{
-                            border-radius: 5px;
-                            border: 1px solid $color-gray-border;
-                            margin-bottom: 10px;
-                            padding: 15px;
-                            text-align: center;
-
-
-
-                            .icon-left{
-                                border: 1px solid $color-gray-border;
-                                float: left;
-                                height: 20px;
-                                width: 20px;
-                            }
-
-
-
-                            .icon-plus{
-                                float: right;
-                                font-size: 25px;
-                                margin-top: -7px;
-                            }
-                        }
                     }
                 }
 
@@ -155,6 +133,7 @@
                     font-size: 14px;
                     vertical-align: top;
                     width: 400px;
+                    margin-left: 45px;
 
 
 
@@ -163,32 +142,8 @@
                         border-radius: 5px;
                         border: 1px dashed $color-gray-border;
                         margin-top: 10px;
-                        padding-right: 15px;
-                        padding: 10px;
-
-
-
-                        .permission{
-                            border-radius: 5px;
-                            border: 1px solid $color-gray-border;
-                            margin-bottom: 10px;
-                            padding: 15px;
-                            text-align: center;
-
-
-
-                            .icon-user{
-                                float: left;
-                            }
-
-
-
-                            .icon-plus{
-                                float: right;
-                                font-size: 25px;
-                                margin-top: -7px;
-                            }
-                        }
+                        padding: 9px;
+                        width: 322px;
                     }
                 }
             }
