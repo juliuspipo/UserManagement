@@ -29,14 +29,8 @@ div.add-user
                     div.applications
                         div.text Aplicaciones disponibles
                         div.container-apps
-                            div.app(ng-repeat="app in [1,2,3,4]")
-                                span.icon-left
-                                span.text CUPONES
-                                span.icon-plus +
+                            div(application="" ng-repeat="app in [1,2,3,4]")
                     div.permissions
                         div.text Roles añadidos
                         div.container-permissions
-                            div.permission(ng-repeat="permission in [1,2]")
-                                span.icon.icon-user
-                                span.text APLICACION 1 Usuario comercial
-                                span.icon-plus X
+                            div(permission="", ng-repeat="permission in [1,2]")
