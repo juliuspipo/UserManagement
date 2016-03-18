@@ -20,6 +20,16 @@
             $state.go('search-user');
         };
 
+
+
+        $scope.visibilityExit = false;
+        $scope.showExit = function (){
+            $scope.visibilityExit = !$scope.visibilityExit;
+        };
+
+
+
+
         setup();
     }
 
