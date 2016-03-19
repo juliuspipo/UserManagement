@@ -1,11 +1,11 @@
-div.add-user
+div.add-user( ng-controller="addUserCtrl" )
     div.container-data-user
         h2.subtitle Alta de usuario
         div.content-user-form
             form.content-image-profile(action="index.html", method="post")
                 img.image(src="", alt="")
                 //- input(type="file", name="name", value="")
-                div.upload-image SELECCIONAR FOTO
+                div.upload-image(ng-click=" openModalPermissions() ") SELECCIONAR FOTO
             div.content-form-field
                 div.row-field
                     div.form-field

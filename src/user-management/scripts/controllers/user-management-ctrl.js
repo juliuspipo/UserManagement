@@ -3,12 +3,11 @@
 
 
 
-    function searchUsersCtrl ( $scope){
+    function searchUsersCtrl ( $scope ){
 
 
 
         function setup (){
-            console.log("searchUsersCtrl");
         }
 
 

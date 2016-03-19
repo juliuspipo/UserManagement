@@ -9,6 +9,7 @@
     angular.module( "userManagement", [
         "ui.router",
         'oc.lazyLoad',
+        'ui.bootstrap',
 
         "userManagement.controllers",
         "userManagement.directives",

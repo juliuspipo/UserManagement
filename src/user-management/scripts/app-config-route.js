@@ -22,7 +22,7 @@
                 resolve: {
                     controllers: function ( $ocLazyLoad ){
                         return $ocLazyLoad.load([
-                            "./user-management/scripts/controllers/loginCtrl.js"
+                            "./user-management/scripts/controllers/login-ctrl.js"
                         ]);
                     }
                 }
@@ -50,7 +50,7 @@
                 resolve: {
                     controllers: function ( $ocLazyLoad ){
                         return $ocLazyLoad.load([
-                            "./user-management/scripts/controllers/userManagementCtrl.js"
+                            "./user-management/scripts/controllers/user-management-ctrl.js"
                         ]);
                     }
                 }
@@ -64,6 +64,8 @@
                 resolve: {
                     controllers: function ( $ocLazyLoad ){
                         return $ocLazyLoad.load([
+                            "./user-management/scripts/controllers/add-user-ctrl.js",
+                            "./user-management/scripts/controllers/modals/permissions-ctrl.js",
                             "./user-management/scripts/directives/application/application.js",
                             "./user-management/scripts/directives/permission/permission.js"
                         ]);
