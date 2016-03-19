@@ -1,4 +1,3 @@
-src/commons/bower_components/
 node_modules/
 build/
 npm-debug.log
