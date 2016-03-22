@@ -10,7 +10,7 @@
         margin: 0 auto;
         padding: 20px 30px;
         text-align: left;
-        width: 320px;
+        width: 380px;
 
 
 
@@ -24,12 +24,13 @@
 
 
 
-        .icon-arrow {
+        .icon-arrow-left {
             background-position: top left;
             background-size: 30px 30px;
             cursor: pointer;
             margin-left: -5px;
-            padding-right: 11px;
+            margin-top: -5px;
+            padding-right: 36px;
         }
 
 
@@ -44,9 +45,19 @@
             margin-top: 20px;
         }
 
+        .instructions-bottom {
+            color: $color-gray-dark;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: left;
+            margin-top: 20px;
+        }
 
 
-        .loginTitle {
+
+        .login-title {
             color: $color-green;
             font-size: 20px;
             font-style: normal;
@@ -60,7 +71,7 @@
             font-size: 20px;
             font-style: normal;
             font-weight: 700;
-            margin-top: -13px;
+            margin-top: -20px;
         }
 
 
@@ -91,14 +102,19 @@
 
 
 
-        label.password {
-            margin-top: 10px;
+        label {
+            display: block;
         }
 
 
 
         label.password-top {
-            margin-top: 20px;
+            margin-top: 10px;
+        }
+
+
+        label.password-bottom {
+            margin-top: 15px;
         }
     }
 
