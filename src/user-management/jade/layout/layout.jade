@@ -7,16 +7,12 @@ head
 body(ng-app="userManagement", ng-controller="mainCtrl")
 
     div.main-container
-        include ../includes/menu.jade
-        
-
         div( ui-view="" )
-
 
 
     script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js")
     script(type="text/javascript", src="https://code.angularjs.org/1.5.2/angular-animate.min.js")
-    
+
     script(type="text/javascript", src="./commons/bower_components/angular-ui-router/release/angular-ui-router.min.js")
     script(type="text/javascript", src="./commons/bower_components/oclazyload/dist/ocLazyLoad.min.js")
     script(type="text/javascript", src="./commons/bower_components/underscore/underscore-min.js")
