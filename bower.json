@@ -21,5 +21,8 @@
     "oclazyload": "^1.0.9",
     "underscore": "^1.8.3",
     "angular-bootstrap": "^1.2.4"
+  },
+  "devDependencies": {
+    "jquery": "^2.2.2"
   }
 }

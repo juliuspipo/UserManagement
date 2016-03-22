@@ -12,6 +12,8 @@
             replace: true,
             templateUrl: './user-management/scripts/directives/permission/permission.tpl.html',
             scope:{
+                permission: "=",
+                onClick: "="
             },
             link:function ( $scope ){
             }

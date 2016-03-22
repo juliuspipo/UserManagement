@@ -1,10 +1,8 @@
-include ../includes/menu.jade
-
 div.user-management(ng-controller="searchUsersCtrl")
     div.search-management
         h2.section-title Usuarios
         div.section-add-user
-            div.add-user
+            div.add-user( ng-click="goAddUser()" )
                 span.text ALTA DE USUARIO
                 span.icon.icon-plus +
         div.section-form
@@ -27,10 +25,10 @@ div.user-management(ng-controller="searchUsersCtrl")
                     input(type="text", placeholder="Introduce nombre o ID usuario")
                     span.icon.icon-search
                 div.search-button BUSCAR
-                div.search-advanced-button
-                    span.text Avanzada
-                    span.icon.icon-arrow-down
-            div.form-dates
+                div.search-advanced-button(ng-click="isAdvancedSearch = !isAdvancedSearch")
+                    span.text Avanzada {{isAdvancedSearch}}
+                    span.icon.icon-arrow-down( ng-class="{ 'down': isAdvancedSearch }" )
+            div.form-dates(uib-collapse="!isAdvancedSearch")
                 div.date-start
                     div.text Fecha inicio desde
                     input.date-field(type="tel" placeholder="DD")

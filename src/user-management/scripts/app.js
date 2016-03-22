@@ -7,6 +7,7 @@
     angular.module( "userManagement.filters", [] );
 
     angular.module( "userManagement", [
+        "ngAnimate",
         "ui.router",
         'oc.lazyLoad',
         'ui.bootstrap',

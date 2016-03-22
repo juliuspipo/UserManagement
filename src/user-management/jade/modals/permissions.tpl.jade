@@ -4,7 +4,9 @@ div.modal-header
 div.modal-body
     div.row
         div.col-xs-12
-            p.text Si cambias de producto, el proceso de cotización se perderá. Deseas continuar:
+            p.text( ng-click="addRol(rol)" ng-repeat="rol in roles" ) {{rol.name}}
+            
+            
     div.row.sec2
         div.col-xs-12
             button.button.next(ng-click="accept()") Aceptar

@@ -9,15 +9,29 @@
 
 
 
-        api.openPermissions = function ( _scope ) {
+        api.openPermissions = function ( _roles ) {
+            var defered = $q.defer();
+            var promise = defered.promise;
 
             var modalLogin = $uibModal.open( {
                 animation: true,
                 windowClass: 'wibe-modal permissions',
                 templateUrl:  'user-management/views/modals/permissions.tpl.html',
-                scope: _scope,
-                controller: 'PermissionsCtrl'
+                controller: 'PermissionsCtrl',
+                resolve: {
+                    roles: function () {
+                        return _roles;
+                    }
+                }
             } );
+
+            modalLogin.result
+                .then(function ( _selectedRol ) {
+                    defered.resolve( _selectedRol );
+                }, function () {
+                    defered.reject();
+                });
+            return promise;
 
         };
 

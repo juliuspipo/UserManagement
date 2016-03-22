@@ -12,8 +12,17 @@
             replace: true,
             templateUrl: './user-management/scripts/directives/application/application.tpl.html',
             scope:{
+                application: '=',
+                onClick: '='
             },
             link:function ( $scope ){
+
+                function setup () {
+                }
+
+
+
+                setup();
             }
 
 

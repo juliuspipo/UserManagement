@@ -66,6 +66,7 @@
                         return $ocLazyLoad.load([
                             "./user-management/scripts/controllers/add-user-ctrl.js",
                             "./user-management/scripts/controllers/modals/permissions-ctrl.js",
+                            "./user-management/scripts/directives/upload-image/upload-image.js",
                             "./user-management/scripts/directives/application/application.js",
                             "./user-management/scripts/directives/permission/permission.js"
                         ]);

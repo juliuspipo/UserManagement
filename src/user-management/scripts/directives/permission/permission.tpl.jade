@@ -1,4 +1,4 @@
-div.permission
+div.permission( ng-click=" onClick( permission ) ")
     span.icon.icon-user
-    span.text APLICACION 1 Usuario comercial
+    span.text {{permission.application.name}} - {{permission.rol.name}}
     span.icon-delete X

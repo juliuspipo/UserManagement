@@ -3,7 +3,7 @@
 
 
 
-    function mainCtrl ( $scope, $rootScope, $state ){
+    function mainCtrl ( $scope, $state ){
 
 
 
@@ -12,10 +12,14 @@
         }
 
 
+        $scope.goView = function ( _state ) {
+            $state.go( _state );
+        };
+
+
 
         function setupVars () {
             $scope.model = {};
-            $scope.model.lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos porro blanditiis enim doloremque deserunt voluptatem ducimus quam, numquam tenetur, quibusdam maiores commodi laboriosam corporis, quo animi temporibus aut nisi recusandae.";
             $scope.visibilityExit = false;
         }
 

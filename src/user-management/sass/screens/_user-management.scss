@@ -23,6 +23,7 @@
 
 
             .add-user{
+                cursor: pointer;
                 background: $color-orange-button;
                 border-radius: 5px;
                 color: white;
@@ -138,6 +139,7 @@
 
 
                 .search-advanced-button{
+                    cursor: pointer;
                     display: inline-block;
                     font-size: 14px;
                     margin-left: 47px;

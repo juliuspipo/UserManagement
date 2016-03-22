@@ -30,7 +30,9 @@
 
 
                 .image{
+                    border: 1px solid $color-gray-border-title;
                     height: 151px;
+                    padding: 0;
                     width: 151px;
                 }
 
@@ -39,14 +41,22 @@
                 .upload-image{
                     background: $color-gray-border-title;
                     border-radius: 5px;
-                    box-sizing: border-box;
                     color: $color-gray-border;
-                    cursor: pointer;
-                    font-size: 14px;
                     margin-top: 10px;
+                    position: relative;
                     padding: 3px 5px;
-                    text-align: center;
                     width: 150px;
+                    overflow: hidden;
+
+
+
+                    input{
+                        cursor: pointer;
+                        left: 5px;
+                        opacity: 0;
+                        position: absolute;
+                        top: 3px;
+                    }
                 }
             }
 
