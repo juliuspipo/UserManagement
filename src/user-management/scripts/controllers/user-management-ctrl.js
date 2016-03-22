@@ -11,6 +11,7 @@
         }
 
 
+
         $scope.goAddUser = function () {
             $scope.goView("add-user");
         };

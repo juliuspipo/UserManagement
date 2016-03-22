@@ -13,6 +13,7 @@
         }
 
 
+
         $scope.sendImageProfile = function () {
             console.log( $scope.model.file );
         };
@@ -84,6 +85,7 @@
                 }
             ];
         }
+
 
 
         setup();

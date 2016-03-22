@@ -12,6 +12,7 @@
         }
 
 
+
         $scope.goView = function ( _state ) {
             $state.go( _state );
         };

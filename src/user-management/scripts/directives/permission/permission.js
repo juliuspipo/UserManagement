@@ -14,12 +14,7 @@
             scope:{
                 permission: "=",
                 onClick: "="
-            },
-            link:function ( $scope ){
             }
-
-
-
         };
 
 

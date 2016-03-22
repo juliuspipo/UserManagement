@@ -22,7 +22,7 @@
 
 
 
-        $scope.addRol = function ( _selectedRol) {
+        $scope.addRol = function ( _selectedRol ) {
             $uibModalInstance.close( _selectedRol );
         };
 

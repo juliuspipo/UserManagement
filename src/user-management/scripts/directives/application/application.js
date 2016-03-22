@@ -14,19 +14,7 @@
             scope:{
                 application: '=',
                 onClick: '='
-            },
-            link:function ( $scope ){
-
-                function setup () {
-                }
-
-
-
-                setup();
             }
-
-
-
         };
 
 

@@ -35,8 +35,13 @@
 
         };
 
+
         return api;
+
+
     }
+
+
 
     angular.module( 'userManagement.services' )
         .factory("ModalSrv", modal );
